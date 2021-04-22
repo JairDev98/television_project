@@ -33,4 +33,8 @@ Primeiramente gostaria de agradecer imensamente a RocketSeat, pois sem a orienta
 
 Aos profissionais que foram pioneiros na televisão brasileira, pois mesmo sem quase conhecer o território onde estavam entrando, fizeram o seu melhor e assim teve inicio todo esse processo.
 
+<<<<<<< HEAD
 "Tudo deve ser feito com muita dedicação e sempre se persistindo"
+=======
+"Tudo deve ser feito com muita dedicação e sempre se persistindo"
+>>>>>>> 3ec4322986ba476e073df2809b247ff8e8c72779
