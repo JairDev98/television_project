@@ -13,7 +13,7 @@ interface istarMenu{
 
 export function StarMenu(){
     const stars: istarMenu[] = [
-        {id: 1, star:"/images/lima.jpg", name:"LIMA DO ARTE"},
+        {id: 1, star:"/images/lima.jpg", name:"LIMA DUARTE"},
         {id: 2, star:"/images/hebe.jpg", name:"HEBE CAMARGO"},
         {id: 3, star:"/images/lolita.jpg", name:"LOLITA RODRIGUES"},
         {id: 4, star:"/images/assis.jpg", name:"ASSIS CHATEAUBRIAND"},

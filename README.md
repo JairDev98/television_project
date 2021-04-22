@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Projeto Television
 
-## Getting Started
+Seja muito bem vindo a este projeto.
 
-First, run the development server:
+Acesso: https://television-project.vercel.app/
+
+A finalidade foi voltada a navegação e da formulação do layout e estruturação do site da antiga TV Tupi, inaugurada em 18 de Setembro de 1950, ao qual teve o encerramento das suas atividades em 18 e Julho de 1980.
+Devido a sua data de encerramento a mesma nunca possui um site na internet.
+
+# Objetivo
+
+Sendo a primeira estação de televisão da américa Latina, a TV Tupi mais tarde tendo o seu nome alterado para Rede Tupi de televisão, tem uma grande importância história para todas as demais estações que estão ativas hoje no Brasil. Dentro entre seus grandes feitos, podemos mencionar a criação do Reporter Esso um dos primeiros jornais de comunicação em massa pela televisão e de programas como Alô Doçura - 1953, Rancho Alegre - 1950 e a novela Beto Rockefeller - 1968.
+
+# Execução
+Primeiro, rode o development server:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
 ```
+Abra [http://localhost:3000](http://localhost:3000) e veja o resultado no seu browser de internet.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Fontes
+O recurso de carrosel animado foi introduzido por meio da biblioteca: react-slick, link: https://react-slick.neostack.com/
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+As imagens foram buscadas através do recurso Google Images
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+A fonte utilizada, Poppins foi disponibilizada pelo Google Fonts: https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Agradecimentos
+Primeiramente gostaria de agradecer imensamente a RocketSeat, pois sem a orientação dos professores e toda a equipe quanto a desenvolvimento de projetos em front-End esse projeto não seria possível.
 
-## Learn More
+Aos profissionais que foram pioneiros na televisão brasileira, pois mesmo sem quase conhecer o território onde estavam entrando, fizeram o seu melhor e assim teve inicio todo esse processo.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+"Tudo deve ser feito com muita dedicação e sempre se persistindo"
