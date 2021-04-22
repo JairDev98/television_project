@@ -14,6 +14,11 @@
 .carroselContainer{
     width: 70%;
     margin: 25px auto;
+
+    @media(max-width:400px){
+        margin: 2px auto;
+        width: 100%;
+    }
 }
 
 .starContainer{
@@ -39,7 +44,18 @@
     img:hover {
         transform: scale(1.06);
       }
-    }  
+    }
+    
+    @media(max-width: 400px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a{
+            width: 100%;
+            margin: 0.4rem 0;
+        }
+    }
 }
 
 .announcementContainer{

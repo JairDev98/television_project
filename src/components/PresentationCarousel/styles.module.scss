@@ -13,4 +13,11 @@
         color: var(--white);
         filter: brightness(2);
     }
+
+    @media(max-width: 400px){
+        margin: 2px 0;
+        img{
+            width: 100%;
+        }
+    }
 }

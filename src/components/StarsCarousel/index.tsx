@@ -40,6 +40,10 @@ export function StarMenu(){
                     settings:{
                     slidesToShow: 2,
                     }},
+            {breakpoint:400, 
+                    settings:{
+                    slidesToShow: 1,
+                    }},
                 ]        
 
     return(

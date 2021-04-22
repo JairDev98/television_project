@@ -13,5 +13,10 @@
         margin: 0 3rem;
         font-size: 4rem;
         font-weight: 700;
+        transition: font-size 0.5s;
+
+        @media (max-width: 400px) {
+            font-size: 2rem;
+          }
     }
 }

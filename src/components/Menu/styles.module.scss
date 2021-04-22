@@ -17,6 +17,10 @@
             @media (max-width: 800px) {
                 margin-left: 3rem;
               }
+            
+            @media (max-width: 400px) {
+                margin-left: 2rem;
+              }  
         }
         a{
          text-decoration: none;
@@ -29,6 +33,10 @@
                 @media (max-width: 800px) {
                     font-size: 12px;
                   }
+                
+                @media (max-width: 400px) {
+                    font-size: 8px;
+                  }  
             }
             transition: filter 0.2s;
         }
