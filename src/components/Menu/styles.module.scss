@@ -1,0 +1,48 @@
+.menuContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--wood-chocolate);
+    div{
+        
+        & + div{
+            margin-left: 8rem;
+            transition: margin-left 0.5s;
+
+            @media (max-width: 1000px) {
+                margin-left: 5rem;
+              }
+
+            @media (max-width: 800px) {
+                margin-left: 3rem;
+              }
+        }
+        a{
+         text-decoration: none;
+            h1{
+                color: var(--white);
+                font-size: 20px;
+                font-weight: 400;
+                transition: font-size 0.5s;
+
+                @media (max-width: 800px) {
+                    font-size: 12px;
+                  }
+            }
+            transition: filter 0.2s;
+        }
+        &:hover{
+            filter: brightness(0.7);
+        }
+        
+    }
+
+    transition: width 0.5s;
+
+    @media (max-width: 800px) {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+}

@@ -1,0 +1,16 @@
+.item{
+    margin: 10px 0;
+    img{
+        margin: auto;
+        width: 80%;
+        border-radius: 1rem;
+
+        filter: brightness(0.9);
+        box-shadow: 0px 10px 55px 20px black;
+    }
+    h3{
+        text-align: center;
+        color: var(--white);
+        filter: brightness(2);
+    }
+}

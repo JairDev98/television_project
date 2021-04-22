@@ -1,0 +1,55 @@
+.mainContainer{
+    background-color: var(--gray-200);
+    filter: brightness(0.8);
+    margin: auto 7rem;
+    display: flex;
+    flex-direction: column;
+    transition: margin 0.5s;
+
+    @media (max-width: 800px) {
+        margin: auto 0;
+      }
+}
+
+.carroselContainer{
+    width: 70%;
+    margin: 25px auto;
+}
+
+.starContainer{
+    margin-bottom: 2px;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 1rem 2rem ;
+    
+    a{  
+        width: 32%;
+    img{
+        width: 100%;
+        box-shadow: 3px 5px 15px 2px black;
+        transition: all 0.2s ease;
+        & + img{
+            margin-left: 50px;
+        }
+    }
+    img:hover {
+        transform: scale(1.06);
+      }
+    }  
+}
+
+.announcementContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+
+    background-color: var(--wood-chocolate);
+
+    border-top: 5px solid var(--wood-chocolate-200);
+    border-bottom: 5px solid var(--wood-chocolate-200);
+}

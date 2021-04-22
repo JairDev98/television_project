@@ -1,0 +1,17 @@
+.headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background:var(--gray-200);
+    img{
+        margin: 0.5rem 0;
+        width: 5rem;
+    }
+
+    h1{
+        margin: 0 3rem;
+        font-size: 4rem;
+        font-weight: 700;
+    }
+}

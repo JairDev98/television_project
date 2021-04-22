@@ -1,0 +1,31 @@
+.starContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0 0.5rem 0;
+
+    background-color: var(--black);
+    width: 100%;
+
+    border-top: 5px solid var(--wood-chocolate-200);
+    border-bottom: 5px solid var(--wood-chocolate-200);
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: all 0.2s ease;
+        img{
+            width: 8rem;
+            border-radius: 2px;
+            filter: brightness(0.9);
+        }
+        p{
+            color: var(--white);
+            font-size: 12px;
+        }
+    }
+    div:hover {
+        transform: scale(1.15);
+      }
+}
