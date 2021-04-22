@@ -32,7 +32,7 @@ export function Card(){
 
         {
           title:"Boliche Royal",
-          image:"/images/boliche.jpg",
+          image:"/images/boliche.JPG",
           information:"Um festival de incriveis prêmios na sua casa, liquidificadores, fogão e uma incrivel nova geladeira, tudo através das gelatinas Royal."
         }]; 
 

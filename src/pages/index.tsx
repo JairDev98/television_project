@@ -21,7 +21,7 @@ export default function Home() {
         <div className={styles.imageContainer}>
           <a><img src={"/images/rca.jpg"} alt="RCA TUPI PRF3" /></a>
           <a><img src={"/images/beto.jpg"} alt="Beto" /></a>
-          <a><img src={"/images/toddy.jpg"} alt="Patrulheiro" /></a>
+          <a><img src={"/images/toddy.JPG"} alt="Patrulheiro" /></a>
         </div>
 
         <div className={styles.announcementContainer}>
