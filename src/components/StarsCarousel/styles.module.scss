@@ -14,15 +14,19 @@
         justify-content: center;
         flex-direction: column;
         transition: all 0.2s ease;
-        img{
-            width: 8rem;
-            border-radius: 2px;
-            margin: 0 10px;
-            filter: brightness(0.9);
-        }
-        p{
-            color: var(--white);
-            font-size: 12px;
+        a{
+            text-decoration: none;
+            border: none;
+            img{
+                width: 8rem;
+                border-radius: 2px;
+                margin: 0 10px;
+                filter: brightness(0.9);
+            }
+            p{
+                color: var(--white);
+                font-size: 12px;
+            }
         }
     }
     div:hover {
