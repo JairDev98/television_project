@@ -3,7 +3,7 @@ import Vimeo, {VimeoProps} from '@u-wave/react-vimeo';
 import styles from './styles.module.scss';
 
 export function ScheduleAnnouncements(){
-
+   
     const optsOne : VimeoProps ={
         video: '587481455',
         height: '220',
@@ -54,29 +54,28 @@ export function ScheduleAnnouncements(){
            <div className={styles.subannouncementContainer}>
                 <Vimeo {...optsOne} className={styles.vimeo}/>
                 <Vimeo {...optsSix} className={styles.vimeo}/>
+                <div className={styles.subannouncementContainer2}>
+                    <Vimeo {...optsNine} className={styles.vimeo}/>
+                </div>
             </div>
 
 
            <div className={styles.subannouncementContainer}>
-                <Vimeo {...optsNine} className={styles.vimeo}/>
                 <Vimeo {...optsFour} className={styles.vimeo}/>
-           </div>
-
-
-           <div className={styles.subannouncementContainer}>
                 <Vimeo {...optsFive} className={styles.vimeo}/>
-                <Vimeo {...optsEight} className={styles.vimeo}/>
+                <div className={styles.subannouncementContainer2}>
+                    <Vimeo {...optsEight} className={styles.vimeo}/>
+                </div>
            </div>
-            
+
+
            <div className={styles.subannouncementContainer}>
                 <Vimeo {...optsSeven} className={styles.vimeo}/>
                 <Vimeo {...optsTwo} className={styles.vimeo}/>
-            </div>
-
-            <div className={styles.subannouncementContainer}>
-                <Vimeo {...optsTre} className={styles.vimeo}/>
-                <Vimeo {...optsFive} className={styles.vimeo}/>
-            </div>
+                <div className={styles.subannouncementContainer2}>
+                    <Vimeo {...optsTre} className={styles.vimeo}/>
+                </div>
+           </div>
         </div>
     );
 }

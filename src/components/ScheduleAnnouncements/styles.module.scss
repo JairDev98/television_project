@@ -16,7 +16,7 @@
 .subannouncementContainer{
     display: flex;
    
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
         flex-direction: column;
         margin: 0.2rem 0 ;
       }
