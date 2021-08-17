@@ -1,14 +1,13 @@
-.starContainer{
+.starSlide{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    text-align: center;
+    background-color: var(--black);
+}
+
+.starContainer{
     padding: 1rem 0 0.5rem 0;
 
-    background-color: var(--black);
-    width: 100%;
-
-    border-top: 5px solid var(--wood-chocolate-200);
-    border-bottom: 5px solid var(--wood-chocolate-200);
     div{
         display: flex;
         align-items: center;
@@ -18,6 +17,7 @@
         img{
             width: 8rem;
             border-radius: 2px;
+            margin: 0 10px;
             filter: brightness(0.9);
         }
         p{

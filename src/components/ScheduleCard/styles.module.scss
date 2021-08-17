@@ -1,5 +1,4 @@
 .cardContainer{
-  border-top: 5px solid var(--wood-chocolate-200);
   border-bottom: 5px solid var(--wood-chocolate-200);
 
   display: flex;
@@ -7,11 +6,6 @@
   justify-content: center;
 
   position: relative;
-  margin: 10px 0;
-}
-
-.titleCard{
-  text-align: center;
 }
 
 .card{
@@ -19,9 +13,8 @@
   position: relative;
 
   display: flex;
-  justify-content: space-between;
 
-  margin: 2rem 14rem;
+  margin: 2rem 7rem;
   background-color: var(--gray-300);
   filter: brightness(1);
   box-shadow: 1px 1px 15px 2px black;
@@ -46,6 +39,7 @@
     margin: 1rem 2rem;
   }
 }
+
 .card:hover {
   transform: scale(1.05);
 }

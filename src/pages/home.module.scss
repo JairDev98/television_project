@@ -1,19 +1,34 @@
 .mainContainer{
+    background-color: var(--wood-200);
+    border: 10px solid var(--wood-500);
+}
+
+.designTelevision{
     background-color: var(--gray-200);
-    filter: brightness(0.8);
-    margin: auto 7rem;
-    display: flex;
-    flex-direction: column;
+    margin: 0 10rem;
     transition: margin 0.5s;
+    border-radius: 10px;
+
+    @media (max-width: 1024px) {
+        margin: auto 3rem;
+      }
 
     @media (max-width: 800px) {
         margin: auto 0;
       }
 }
 
+.divScreenAnnoucment{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 6px solid var(--wood-500);
+    border-top: 10px solid var(--wood-500);
+    filter: brightness(0.8);
+}
+
 .carroselContainer{
-    width: 70%;
-    margin: 25px auto;
+    width: 90%;
+    margin: 1px auto;
 
     @media(max-width:400px){
         margin: 2px auto;
@@ -21,15 +36,12 @@
     }
 }
 
-.starContainer{
-    margin-bottom: 2px;
-}
-
 .imageContainer{
     display: flex;
     justify-content: space-between;
     
-    margin: 1rem 2rem ;
+    margin: 0 1rem ;
+    margin-bottom: 1rem;
     
     a{  
         width: 32%;
@@ -60,12 +72,16 @@
 
 .announcementContainer{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1rem 0;
+    justify-content: center;
+    background-color: var(--wood-200);
+}
 
-    background-color: var(--wood-chocolate);
+.cardPrograming{
+    filter: brightness(0.8);
+    border: 5px solid var(--wood-500);
+    border-top: 5px solid var(--wood-500);
+    border-bottom: 10px solid var(--wood-500);
 
-    border-top: 5px solid var(--wood-chocolate-200);
-    border-bottom: 5px solid var(--wood-chocolate-200);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 }

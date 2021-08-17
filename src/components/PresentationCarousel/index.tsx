@@ -13,10 +13,10 @@ interface iBanner{
 
 export function CarouselPresentation(){
   const images: iBanner[] = [
-    {id:1, img:"/images/tvtupi.jpg", description: "TV TUPI em São Paulo pelo canal 4"},
-    {id:2, img:"/images/esso.jpg", description: "Reporter Esso aqui na TV TUPI"},
-    {id:3, img:"/images/rancho.jpg", description: "Mazaroppi do cinema para sua casa em Racho Alegre"},
-    {id:4, img:"/images/teatro.jpg", description: "Obras clássicas no Grande Treatro Tupi"}]  
+    {id:1, img:"/images/tvtupi.jpg", description: "TV TUPI PRF3"},
+    {id:2, img:"/images/esso.jpg", description: "Reporter Esso"},
+    {id:3, img:"/images/rancho.jpg", description: "Racho Alegre"},
+    {id:4, img:"/images/teatro.jpg", description: "O Grande Treatro Tupi"}]  
   
   return (
     <Carousel

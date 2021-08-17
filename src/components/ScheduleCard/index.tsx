@@ -1,5 +1,3 @@
-import Carousel from 'react-slick';
-
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -14,31 +12,41 @@ interface Card{
 export function Card(){
     const cards: Card[] = [
         {
-          title:"O grande teatro Tupi",
-          image:"/images/grandetupo.jpg",
-          information:"Emoção, romance, tragédia, comédia, as mais famosas e prestigiadas peças tetrais dos mais luxuosos e tenues teatros agora na sua casa."},
+          title:"Sua Vida me Pertence",
+          image:"/images/sua_vida.png",
+          information:"Exibida entre 21 de dezembro de 1951 e 8 de fevereiro de 1952."},
         
         {
-          title:"Reporter Esso",
-          image:"/images/repoesso.png",
-          information:"Com o patricinio da Esso levamos até a sua casa as noticias mais importantes para que você passe o seu dia muito bem informado."
+          title:"Pollyana",
+          image:"/images/pollyana.jpg",
+          information:"Exibida entre 9 de outubro de 1956 e 17 de janeiro de 1957."
         },
 
         {
-          title:"Rancho Alegre",
-          image:"/images/ralegre.jpg",
-          information:"Muita diversão com Mazzaropi e sua turma nesse rancho onde acontecem muitas confusões e muita alegria, só na Tupi."
+          title:"Lever no Espaço",
+          image:"/images/lever.jpg",
+          information:"Exbida entre 12 de janeiro de 1957 e no do mesmo ano."
+        },
+        {
+          title:"A Gata",
+          image:"/images/gata.jpg",
+          information:"Exibida entre 11 de maio de 1964 e 2 de julho de 1964."
         },
 
         {
-          title:"Boliche Royal",
-          image:"/images/boliche.JPG",
-          information:"Um festival de incriveis prêmios na sua casa, liquidificadores, fogão e uma incrivel nova geladeira, tudo através das gelatinas Royal."
+          title:"O Direito de Nascer",
+          image:"/images/nascer.jpg",
+          information:"Exibida entre 7 de dezembro de 1964 e 13 de agosto de 1965."
+        },
+
+        {
+          title:"Éramos Seis",
+          image:"/images/eramos.JPG",
+          information:"Exibida entre 1 de maio de 1967 e no final de 1967."
         }]; 
 
     return(
         <>
-         <h1 className={styles.titleCard}>Programação</h1>
             <div className={styles.cardContainer}>
                 <a>
                 {cards.map(card=>(

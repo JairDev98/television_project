@@ -7,10 +7,10 @@ interface imenuItens{
 
 export function Menu(){
     const menuItems: imenuItens[]= [
-        {id:1, item:'Estrelas'},
-        {id:2, item:'Referências'},
+        {id:1, item:'Pelo Canal 4'},
+        {id:2, item:'Programação'},
         {id:3, item:'Anunciantes'},
-        {id:4, item:'Programação'}    
+        {id:4, item:'Sobre'}    
     ]
 
     return(

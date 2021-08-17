@@ -158,6 +158,15 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
+"@types/react@^17.0.0":
+  version "17.0.18"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.18.tgz#4109cbbd901be9582e5e39e3d77acd7b66bb7fbe"
+  integrity sha512-YTLgu7oS5zvSqq49X5Iue5oAbVGhgPc5Au29SJC4VeE17V6gASoOxVkUDy9pXFMRFxCWCD9fLeweNFizo3UzOg==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
 "@types/scheduler@*":
   version "0.16.1"
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.1.tgz#18845205e86ff0038517aab7a18a62a6b9f71275"
@@ -174,6 +183,29 @@
   integrity sha512-LdsK0BLNYqe3uBuWCBwzGQVy+8g8LDe3u1XGlaOelrDD07cjJGVVoKBSyKieK4dmfqilmP+DJp7lNRaTI7rRAg==
   dependencies:
     "@types/jquery" "*"
+
+"@types/vimeo__player@^2.10.0":
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/@types/vimeo__player/-/vimeo__player-2.10.1.tgz#53d5ccffb757b49e3ff3f059803275832e54f1fe"
+  integrity sha512-PgmJmOFlkr1r/1bomlTAEY7yuJNM447DqBem1CLNmSefs8ILE/e3e0Ey07GcZK0NujWW/m3kyv1kIhtLh/iu/A==
+
+"@u-wave/react-vimeo@^0.9.5":
+  version "0.9.5"
+  resolved "https://registry.yarnpkg.com/@u-wave/react-vimeo/-/react-vimeo-0.9.5.tgz#70838aa187c333e16031481d2b6d7f8c98073ef2"
+  integrity sha512-dPJ/lbBu4PI3fVrpauFuLheG7Pc6kJVRpt+DA0qCHY9nfSGL2vmN/JONFc9LkqkAEnFocf00+ytg9BK+GWGtzg==
+  dependencies:
+    "@types/react" "^17.0.0"
+    "@types/vimeo__player" "^2.10.0"
+    "@vimeo/player" "^2.14.1"
+    prop-types "^15.7.2"
+
+"@vimeo/player@^2.14.1":
+  version "2.16.0"
+  resolved "https://registry.yarnpkg.com/@vimeo/player/-/player-2.16.0.tgz#30f0d307c5acc2790d6ba0da335670334a643e76"
+  integrity sha512-LjswQcTFkeceRZouK0ipWqZiCCTyuzMEhnB0K9DaNYIrfuZ+VTyJv6cHS60/P4Pw8D0a9PGQYekb2P0ZwbBsrA==
+  dependencies:
+    native-promise-only "0.8.1"
+    weakmap-polyfill "2.0.1"
 
 anser@1.4.9:
   version "1.4.9"
@@ -1173,6 +1205,11 @@ nanoid@^3.1.16:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.22.tgz#b35f8fb7d151990a8aebd5aa5015c03cf726f844"
   integrity sha512-/2ZUaJX2ANuLtTvqTlgqBQNJoQO398KyJgZloL0PZkC0dpysjncRUPsFe3DUPzz/y3h+u7C46np8RMuvF3jsSQ==
 
+native-promise-only@0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/native-promise-only/-/native-promise-only-0.8.1.tgz#20a318c30cb45f71fe7adfbf7b21c99c1472ef11"
+  integrity sha1-IKMYwwy0X3H+et+/eyHJnBRy7xE=
+
 native-url@0.3.4:
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/native-url/-/native-url-0.3.4.tgz#29c943172aed86c63cee62c8c04db7f5756661f8"
@@ -1446,7 +1483,7 @@ process@0.11.10, process@^0.11.10:
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
 
-prop-types@15.7.2:
+prop-types@15.7.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -1976,6 +2013,11 @@ watchpack@2.1.1:
   dependencies:
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.1.2"
+
+weakmap-polyfill@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/weakmap-polyfill/-/weakmap-polyfill-2.0.1.tgz#ff0278c7f75bb0c492fc3343257f3e87114d709a"
+  integrity sha512-Jy177Lvb1LCrPQDWJsXyyqf4eOhcdvQHFGoCqSv921kVF5i42MVbr4e2WEwetuTLBn1NX0IhPzTmMu0N3cURqQ==
 
 webidl-conversions@^4.0.2:
   version "4.0.2"
