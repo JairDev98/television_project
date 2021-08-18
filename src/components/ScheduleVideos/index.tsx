@@ -1,9 +1,28 @@
 import Vimeo, {VimeoProps} from '@u-wave/react-vimeo';
+import { useLayoutEffect } from 'react';
+import { useState } from 'react';
 
 import styles from './styles.module.scss';
 
-export function ScheduleAnnouncements(){
-   
+/**
+function useWindowSize() {
+    const [size, setSize] = useState([306,220]);
+    useLayoutEffect(() =>{
+        const updateSize = () => {
+            setSize([window.innerWidth - 1060, window.innerHeight - 447]);
+        }
+
+        window.addEventListener('resize', updateSize);
+        updateSize();
+        return () => window.removeEventListener('resize', updateSize);
+    }, []);
+
+    return size;
+}
+ */
+
+export function ScheduleVideos(){
+    //const[width, heigth] = useWindowSize();
     const optsOne : VimeoProps ={
         video: '587481455',
         height: '220',
@@ -15,6 +34,8 @@ export function ScheduleAnnouncements(){
         showByline: false,
         showTitle: false,
     }
+
+    console.log(optsOne);
 
     const optsTwo : VimeoProps ={
         ...optsOne, video : '587510732'
@@ -49,7 +70,7 @@ export function ScheduleAnnouncements(){
     }
 
     return(
-        <div className={styles.announcementContainer}>
+        <div className={styles.videoContainer} >
            
            <div className={styles.subannouncementContainer}>
                 <Vimeo {...optsOne} className={styles.vimeo}/>

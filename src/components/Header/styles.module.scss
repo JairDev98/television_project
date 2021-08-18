@@ -12,22 +12,30 @@
     justify-content: center;
     
     background:var(--gray-200);
-    img{
-        margin: 0.5rem 0;
-        width: 3.5rem;
-        animation-name: animationI;
-        animation-duration: 4s;
-       // animation-iteration-count: infinite;
-    }
 
     h1{
+        font-family: 'Anton';
         margin: 0 3rem;
-        font-size: 4rem;
+        font-size: 4.5rem;
         font-weight: 700;
         transition: font-size 0.5s;
+        border: 1px solid black;
 
         @media (max-width: 400px) {
             font-size: 2rem;
           }
     }
+}
+
+.logo{
+  margin: 0.5rem 0;
+  width: 4rem;
+  animation-name: animationI;
+  animation-duration: 4s;
+   // animation-iteration-count: infinite;
+}
+
+.logoTupi{
+  margin: 0.5rem 0;
+  width: 20rem;
 }

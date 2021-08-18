@@ -1,10 +1,9 @@
 import styles from './home.module.scss';
 
-import {Menu} from '../components/Menu';
 import {CarouselPresentation} from '../components/PresentationCarousel';
 import {Card} from '../components/ScheduleCard';
 
-import { ScheduleAnnouncements } from '../components/ScheduleAnnouncements';
+import { ScheduleVideos } from '../components/ScheduleVideos';
 
 export default function Home() {
   return (
@@ -23,9 +22,9 @@ export default function Home() {
             </div>
           </div>
 
-        <div className={styles.announcementContainer}>
-          <ScheduleAnnouncements />
-        </div>
+       
+          <ScheduleVideos />
+       
 
         <div className={styles.cardPrograming}>
           <Card />

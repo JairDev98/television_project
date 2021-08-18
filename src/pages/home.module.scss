@@ -6,6 +6,7 @@
 .designTelevision{
     background-color: var(--gray-200);
     margin: 0 10rem;
+    margin-top: 10px;
     transition: margin 0.5s;
     border-radius: 10px;
 
@@ -71,13 +72,6 @@
     }
 }
 
-.announcementContainer{
-    display: flex;
-    justify-content: center;
-    background-color: var(--wood-200);
-    width: 100%;
-}
-
 .cardPrograming{
     filter: brightness(0.8);
     border: 5px solid var(--wood-500);
@@ -86,4 +80,5 @@
 
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
+    margin-bottom: 10px;
 }

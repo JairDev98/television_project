@@ -1,9 +1,10 @@
-.announcementContainer{
+.videoContainer{
     display: flex;
     flex-direction: column;
-    margin: 1rem auto;
+    align-items: center;
+    background-color: var(--wood-200);
 
-    @media (max-width: 800px) {
+    @media (max-width: 768px) {
         margin:0;
       }  
 
@@ -15,6 +16,7 @@
 
 .subannouncementContainer{
     display: flex;
+    flex-direction: row;
    
     @media (max-width: 768px) {
         flex-direction: column;
