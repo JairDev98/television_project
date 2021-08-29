@@ -28,6 +28,7 @@ export function CarouselPresentation(){
     autoplay
     autoplaySpeed={8000}
     fade
+    className={styles.carroselContainer}
     >
           {images.map(banner=>(
             <div className={styles.item} key={banner.id}>

@@ -3,9 +3,11 @@ import Carousel from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import { SquareCarrousel } from '../SquareCarrousel';
+import { SquareCarrousel } from './SquareCarrousel';
+import { useModal } from '../../hooks/useModal';
 
 import styles from './styles.module.scss';
+import { strict } from 'node:assert';
 
 interface istarMenu{
     id: number;
@@ -15,20 +17,22 @@ interface istarMenu{
 }
 
 export function StarMenu(){
+    const { readModalValues } = useModal();
+
     const stars: istarMenu[] = [
-        {id: 1, star:"/images/lima.jpg", url:"https://pt.wikipedia.org/wiki/Lima_Duarte", name:"LIMA DUARTE"},
-        {id: 2, star:"/images/hebe.jpg", url:"https://pt.wikipedia.org/wiki/Hebe_Camargo",name:"HEBE CAMARGO"},
-        {id: 3, star:"/images/lolita.jpg", url:"https://pt.wikipedia.org/wiki/Lolita_Rodrigues",name:"LOLITA RODRIGUES"},
-        {id: 4, star:"/images/assis.jpg", url:"https://pt.wikipedia.org/wiki/Assis_Chateaubriand",name:"ASSIS CHATEAUBRIAND"},
-        {id: 5, star:"/images/inezita.jpg", url:"https://pt.wikipedia.org/wiki/Inezita_Barroso",name:"INEZITA BARROSO"},
-        {id: 6, star:"/images/eva.jpg", url:"https://pt.wikipedia.org/wiki/Eva_Wilma",name:"EVA WILMA"},
-        {id: 7, star:"/images/guarnieri.png", url:"https://pt.wikipedia.org/wiki/Gianfrancesco_Guarnieri",name:"GIANFRANCESCO GUARNIERI"},
-        {id: 8, star:"/images/silvio.jpg", url:"https://pt.wikipedia.org/wiki/Silvio_Santos",name:"SILVIO SANTOS"},
-        {id: 9, star:"/images/dermival.jpg", url:"https://www.museudatv.com.br/biografia/dermival-costa-lima/",name:"DERMIVAL COSTA LIMA"},
-        {id: 10, star:"/images/cassiano.jpg", url:"https://pt.wikipedia.org/wiki/Cassiano_Gabus_Mendes",name:"CASSIANO GABUS MENDES"},
-        {id: 11, star:"/images/nicette.png", url:"https://pt.wikipedia.org/wiki/Nicette_Bruno",name:"NICETTE BRUNO"},
-        {id: 12, star:"/images/tarcisio.jpg", url:"https://pt.wikipedia.org/wiki/Tarc%C3%ADsio_Meira",name:"TARCISIO MEIRA"},
-        {id: 13, star:"/images/tony.png", url:"https://pt.wikipedia.org/wiki/Tony_Ramos",name:"TONY RAMOS"},
+        {id: 1, star:"/images/lima.jpg", url:"Lima_Duarte", name:"LIMA DUARTE"},
+        {id: 2, star:"/images/hebe.jpg", url:"Hebe_Camargo",name:"HEBE CAMARGO"},
+        {id: 3, star:"/images/lolita.jpg", url:"Lolita_Rodrigues",name:"LOLITA RODRIGUES"},
+        {id: 4, star:"/images/assis.jpg", url:"Assis_Chateaubriand",name:"ASSIS CHATEAUBRIAND"},
+        {id: 5, star:"/images/inezita.jpg", url:"Inezita_Barroso",name:"INEZITA BARROSO"},
+        {id: 6, star:"/images/eva.jpg", url:"Eva_Wilma",name:"EVA WILMA"},
+        {id: 7, star:"/images/guarnieri.png", url:"Gianfrancesco_Guarnieri",name:"GIANFRANCESCO GUARNIERI"},
+        {id: 8, star:"/images/silvio.jpg", url:"Silvio_Santos",name:"SILVIO SANTOS"},
+        {id: 9, star:"/images/airton.JPG", url:"A%C3%ADrton_Rodrigues",name:"Aírton Rodrigues"},
+        {id: 10, star:"/images/cassiano.jpg", url:"Cassiano_Gabus_Mendes",name:"CASSIANO GABUS MENDES"},
+        {id: 11, star:"/images/nicette.png", url:"Nicette_Bruno",name:"NICETTE BRUNO"},
+        {id: 12, star:"/images/tarcisio.jpg", url:"Tarc%C3%ADsio_Meira",name:"TARCISIO MEIRA"},
+        {id: 13, star:"/images/tony.png", url:"Tony_Ramos",name:"TONY RAMOS"},
     ];
     
     const settings = {
@@ -72,10 +76,12 @@ export function StarMenu(){
 
         <Carousel {...settings} responsive={responsiveCarousel} className={styles.starSlide} >
              {stars.map(star=>(
-                 <nav className={styles.starContainer}>
-            <div key={star.id}>
-                <a href={star.url} target="_blank">
-                    <img src={star.star} alt="Logo" />
+                 <nav key={star.id} className={styles.starContainer}>
+            <div>
+                <a 
+                    onClick={() => readModalValues({urlTitle: star.url, image:star.star})} 
+                >
+                    <img src={star.star} alt={star.name} />
                     <p>{star.name}</p>
                 </a>
             </div>

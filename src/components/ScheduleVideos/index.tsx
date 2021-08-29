@@ -1,28 +1,8 @@
 import Vimeo, {VimeoProps} from '@u-wave/react-vimeo';
-import { useLayoutEffect } from 'react';
-import { useState } from 'react';
 
 import styles from './styles.module.scss';
 
-/**
-function useWindowSize() {
-    const [size, setSize] = useState([306,220]);
-    useLayoutEffect(() =>{
-        const updateSize = () => {
-            setSize([window.innerWidth - 1060, window.innerHeight - 447]);
-        }
-
-        window.addEventListener('resize', updateSize);
-        updateSize();
-        return () => window.removeEventListener('resize', updateSize);
-    }, []);
-
-    return size;
-}
- */
-
 export function ScheduleVideos(){
-    //const[width, heigth] = useWindowSize();
     const optsOne : VimeoProps ={
         video: '587481455',
         height: '220',
@@ -34,8 +14,6 @@ export function ScheduleVideos(){
         showByline: false,
         showTitle: false,
     }
-
-    console.log(optsOne);
 
     const optsTwo : VimeoProps ={
         ...optsOne, video : '587510732'
@@ -75,27 +53,21 @@ export function ScheduleVideos(){
            <div className={styles.subannouncementContainer}>
                 <Vimeo {...optsOne} className={styles.vimeo}/>
                 <Vimeo {...optsSix} className={styles.vimeo}/>
-                <div className={styles.subannouncementContainer2}>
-                    <Vimeo {...optsNine} className={styles.vimeo}/>
-                </div>
+                <Vimeo {...optsNine} className={styles.vimeo}/>
             </div>
 
 
            <div className={styles.subannouncementContainer}>
                 <Vimeo {...optsFour} className={styles.vimeo}/>
                 <Vimeo {...optsFive} className={styles.vimeo}/>
-                <div className={styles.subannouncementContainer2}>
-                    <Vimeo {...optsEight} className={styles.vimeo}/>
-                </div>
+                <Vimeo {...optsEight} className={styles.vimeo}/>
            </div>
 
 
            <div className={styles.subannouncementContainer}>
                 <Vimeo {...optsSeven} className={styles.vimeo}/>
                 <Vimeo {...optsTwo} className={styles.vimeo}/>
-                <div className={styles.subannouncementContainer2}>
-                    <Vimeo {...optsTre} className={styles.vimeo}/>
-                </div>
+                <Vimeo {...optsTre} className={styles.vimeo}/>
            </div>
         </div>
     );

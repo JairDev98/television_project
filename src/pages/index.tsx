@@ -1,36 +1,34 @@
+import { CarouselPoster } from '../components/CarouselPoster';
+import { Card } from '../components/ScheduleCard';
+import { ScheduleVideos } from '../components/ScheduleVideos';
+import {Header} from '../components/Header';
+import {Footer} from '../components/Footer';
+
+import { useModal } from '../hooks/useModal';
+
+import { Modal } from '../components/Modal';
+
 import styles from './home.module.scss';
 
-import {CarouselPresentation} from '../components/PresentationCarousel';
-import {Card} from '../components/ScheduleCard';
-
-import { ScheduleVideos } from '../components/ScheduleVideos';
-
 export default function Home() {
+  const { modalValues } = useModal();
+
   return (
     <>
-      <main className={styles.mainContainer}>
-        <div className={styles.designTelevision}>
-          <div className={styles.divScreenAnnoucment}>
-            <div className={styles.carroselContainer}>
-              <CarouselPresentation />
-            </div>
+    <Modal urlTitle={modalValues.urlTitle} image={modalValues.image}/>
 
-            <div className={styles.imageContainer}>
-              <a><img src={"/images/rca.jpg"} alt="RCA TUPI PRF3" /></a>
-              <a><img src={"/images/beto.jpg"} alt="Beto" /></a>
-              <a><img src={"/images/toddy.JPG"} alt="Patrulheiro" /></a>
-            </div>
-          </div>
+    <Header />
+    <main className={styles.mainContainer}>
+        
+        <div className={styles.designBody}>
+          <CarouselPoster/>
 
-       
-          <ScheduleVideos />
-       
+          <ScheduleVideos/>
 
-        <div className={styles.cardPrograming}>
           <Card />
-          </div>
         </div>
       </main>
+      <Footer />
     </>
   )
 }

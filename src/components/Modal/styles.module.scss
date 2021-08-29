@@ -1,0 +1,102 @@
+.darkBackground{
+  z-index: 1;
+  background-color: var(--black);
+  opacity: 0.9;
+  padding: 150%;
+  position:fixed;
+}
+
+
+.componentStructure{
+  position: fixed;
+  z-index: 1;
+
+  background-color: var(--gray-200);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  border-radius: 5px;
+
+  @media (max-width: 768px) {
+    margin: 6rem;
+  }
+
+  @media (max-width: 425px) {
+    margin: 1rem;
+  }
+
+  @media (max-width: 320px) {
+    margin: 0;
+  }
+}
+
+.componentLeft{
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  img{
+    width: 15rem;
+    border: 5px solid var(--wood-200);
+    margin: 0 10px;
+    filter: brightness(0.9);
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.componentRight{}
+
+.componentContent{
+    float: left;
+    overflow-y: auto;
+    height: 400px;
+
+    margin: 1rem;
+    text-align: justify;
+    font-size: 18;
+    p{
+      margin-top: 1rem;
+      b{
+        font-weight: normal;
+      }
+    }
+
+    @media (max-width: 768px) {
+      height: 500px;
+    }
+
+    @media (max-width: 425px) {
+      height: 620px;
+    }
+
+    @media (max-width: 320px) {
+      height: 665px;
+    }
+}
+
+.componentTop{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+
+  button{
+    margin: 0 1rem 0 2rem;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.componentTitle{
+  display: flex;
+  flex-direction: column;
+  img{
+    width: 50%;
+  }
+}

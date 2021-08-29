@@ -33,9 +33,15 @@
   animation-name: animationI;
   animation-duration: 4s;
    // animation-iteration-count: infinite;
+   @media (max-width: 375px) {
+    width: 3rem;
+  } 
 }
 
 .logoTupi{
   margin: 0.5rem 0;
   width: 20rem;
+  @media (max-width: 375px) {
+    width: 15rem;
+  }
 }

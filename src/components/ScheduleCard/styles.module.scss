@@ -1,14 +1,19 @@
 .cardContainer{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 
-  position: relative;
+  filter: brightness(0.8);
+  border: 5px solid var(--wood-500);
+  border-top: 5px solid var(--wood-500);
+  border-bottom: 10px solid var(--wood-500);
+
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  margin-bottom: 10px;
 }
 
 .card{
   border-radius: 1rem;
-  position: relative;
 
   display: flex;
 

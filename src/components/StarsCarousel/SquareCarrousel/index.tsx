@@ -26,7 +26,7 @@ export function SquareCarrousel(){
     
     <Slider {...settings}>
         {squareLoop.map(square =>(
-            <div key={square}>
+            <div key={square + 1}>
               <div className={styles.childrenSquare} />
             </div>
             ))}
