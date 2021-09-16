@@ -15,6 +15,11 @@ export default function Home() {
 
   return (
     <>
+    <div className={styles.mainChargeContainer}>
+        <div className={styles.mainChargeContainerSub}>
+          <img src="/images/logo.svg" alt="Logo"/>
+        </div>
+    </div>
     <Modal urlTitle={modalValues.urlTitle} image={modalValues.image}/>
 
     <Header />

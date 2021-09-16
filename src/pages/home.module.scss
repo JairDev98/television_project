@@ -1,6 +1,107 @@
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }  
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }  
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+@include keyframes(spin) {
+  0% { opacity: 2; visibility: visible;}
+  50% { opacity: 1; }
+  100% { opacity: 0.01;}
+}
+
+@keyframes animationI {
+  0%   {transform: scaleX(1);}
+  25%   {transform: scaleX(-1);}
+  50%   {transform: scaleX(1);}
+  75%   {transform: scaleX(-1);}
+  100%  {transform: scaleX(1);}
+}
+
 .mainContainer{
     background-color: var(--wood-200);
     border: 10px solid var(--wood-500);
+}
+
+.mainChargeContainer{
+  z-index: 1;
+  background-color: var(--gray-200);
+  padding: 120%;
+  display: flex;
+  justify-content: center;
+  position:fixed;
+  @include animation('spin 8s');
+  visibility: hidden;
+}
+
+.mainChargeContainerSub{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+
+    img{
+      width: 25rem;
+      animation-name: animationI;
+      animation-duration: 4s;
+
+      @media (max-width: 425px) {
+        width: 20rem;
+      }
+
+      @media (max-width: 320px) {
+        width: 15rem;
+      }
+    }
+
+    @media (max-width: 2560px) {
+      margin: -185rem 0 0 -220rem;
+    }
+
+    @media (max-width: 1440px) {
+      margin: -99rem 0 0 -115rem;
+    }
+
+    @media (max-width: 1024px) {
+      margin: -70rem 0 0 -88rem;
+    }
+
+    @media (max-width: 800px) {
+      margin: -50rem 0 0 -65rem;
+    }
+    
+    @media (max-width: 425px) {
+      margin: -20rem 0 0 -37rem;
+    }
+
+    @media (max-width: 375px) {
+      margin: -20rem 0 0 -33.5rem;
+    }
+
+    @media (max-width: 320px) {
+      margin: -10rem 0 0 -28rem;
+    }
 }
 
 .designBody{
